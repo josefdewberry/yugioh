@@ -62,6 +62,7 @@ public class Card {
             if (s.equals("Continuous")) { return CONTINUOUS; }
 
             // This shouldn't happen.
+            System.out.println("Bad effect.");
             return null;
         }
     }
@@ -118,6 +119,7 @@ public class Card {
 
             // This shouldn't happen, although it might if I add newer
             // cards and forget to add the appropriate type (i.e. alien type)
+            System.out.println("Bad type.");
             return null;
         }
     }
@@ -145,6 +147,7 @@ public class Card {
             if (s.equals("WATER")) { return WATER; }
 
             // This shouldn't happen.
+            System.out.println("Bad attribute.");
             return null;
         }
     }
@@ -190,6 +193,7 @@ public class Card {
             if (s.equals("Set")) { return SET; }
 
             // This shouldn't happen.
+            System.out.println("Bad release type.");
             return null;
         }
     }

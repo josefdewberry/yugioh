@@ -3,13 +3,14 @@ package yugioh;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.io.File;
+import java.net.URL;
 
 import yugioh.Card.*;
 import yugioh.Date.*;
 
 public class CardReader {
     
-    public static ArrayList cards;
+    public static ArrayList cards = new ArrayList();
 
     public static MonsterCard buildMonster(String cardInfo) {
         String name;
@@ -27,17 +28,17 @@ public class CardReader {
         int atk;
         int def;
 
-
         Scanner scanner = new Scanner(cardInfo);
+        scanner.useDelimiter(",");
+        scanner.next();
         effect = Effect.findMatch(scanner.next());
         name = scanner.next();
-
         attribute = Attribute.findMatch(scanner.next());
         level = scanner.nextInt();
         type = Type.findMatch(scanner.next());
         atk = scanner.nextInt();
         def = scanner.nextInt();
-
+        
         description = scanner.next();
         code = scanner.nextInt();
         date = new Date(scanner.next());
@@ -63,6 +64,9 @@ public class CardReader {
         CardType cardType;
 
         Scanner scanner = new Scanner(cardInfo);
+        
+        scanner.useDelimiter(",");
+        scanner.next();
         effect = Effect.findMatch(scanner.next());
         name = scanner.next();
 
@@ -97,6 +101,8 @@ public class CardReader {
         CardType cardType;
 
         Scanner scanner = new Scanner(cardInfo);
+        scanner.useDelimiter(",");
+        scanner.next();
         effect = Effect.findMatch(scanner.next());
         name = scanner.next();
 
@@ -123,7 +129,10 @@ public class CardReader {
     public static void main(String[] args) {
         try {
 
-            Scanner scanner = new Scanner(new File("cards.csv"));
+            URL path = CardReader.class.getResource("cards.csv");
+            File f = new File(path.getFile());
+
+            Scanner scanner = new Scanner(f);
 
             if (scanner.hasNextLine()) {
                 scanner.nextLine();
@@ -134,7 +143,9 @@ public class CardReader {
 
             while (scanner.hasNextLine()) {
 
-                Scanner lineScanner = new Scanner(scanner.nextLine());
+                String cardInfo = scanner.nextLine();
+
+                Scanner lineScanner = new Scanner(cardInfo);
 
                 String cardType = "";
 
@@ -147,19 +158,27 @@ public class CardReader {
 
                 switch(cardType) {
                     case "Monster":
-                        cards.add(buildMonster(cardType));
+                        cards.add(buildMonster(cardInfo));
+                        System.out.println("Monster added!");
+                        break;
                     case "Spell":
-                        cards.add(buildSpell(cardType));
+                        cards.add(buildSpell(cardInfo));
+                        System.out.println("Spell added!");
+                        break;
                     case "Trap":
-                        cards.add(buildTrap(cardType));
+                        cards.add(buildTrap(cardInfo));
+                        System.out.println("Trap added!");
+                        break;
                     default:
                         System.out.println("Error: card type not found!");
                 }
-
-                System.out.println("We read the cards without breaking!");
+                lineScanner.close();
             }
-        } catch(Exception e) {
 
+            System.out.println("We read the cards without breaking!");
+            System.out.println("Size: " + cards.size());
+        } catch(Exception e) {
+            System.out.println("Try catch block broke.");
         }
     }
 }
