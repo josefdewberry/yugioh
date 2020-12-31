@@ -29,7 +29,7 @@ public class CardReader {
         int def;
 
         Scanner scanner = new Scanner(cardInfo);
-        scanner.useDelimiter(",");
+        scanner.useDelimiter("\t");
         scanner.next();
         effect = Effect.findMatch(scanner.next());
         name = scanner.next();
@@ -65,7 +65,7 @@ public class CardReader {
 
         Scanner scanner = new Scanner(cardInfo);
         
-        scanner.useDelimiter(",");
+        scanner.useDelimiter("\t");
         scanner.next();
         effect = Effect.findMatch(scanner.next());
         name = scanner.next();
@@ -101,7 +101,7 @@ public class CardReader {
         CardType cardType;
 
         Scanner scanner = new Scanner(cardInfo);
-        scanner.useDelimiter(",");
+        scanner.useDelimiter("\t");
         scanner.next();
         effect = Effect.findMatch(scanner.next());
         name = scanner.next();
@@ -129,7 +129,7 @@ public class CardReader {
     public static void main(String[] args) {
         try {
 
-            URL path = CardReader.class.getResource("cards.csv");
+            URL path = CardReader.class.getResource("cards.tsv");
             File f = new File(path.getFile());
 
             Scanner scanner = new Scanner(f);
@@ -149,7 +149,7 @@ public class CardReader {
 
                 String cardType = "";
 
-                lineScanner.useDelimiter(",");
+                lineScanner.useDelimiter("\t");
                 if (lineScanner.hasNext()) {
                     cardType = lineScanner.next();
                 } else {

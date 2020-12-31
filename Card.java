@@ -49,6 +49,12 @@ public class Card {
             public String toString() {
                 return("Continuous");
             }
+        },
+        // Applicable only to monster cards.
+        FUSION {
+            public String toString() {
+                return("Fusion");
+            }
         };
 
         // Effects are given as strings, so this is for ease of matching
@@ -60,9 +66,10 @@ public class Card {
             if (s.equals("Equip")) { return EQUIP; }
             if (s.equals("Effect")) { return EFFECT; }
             if (s.equals("Continuous")) { return CONTINUOUS; }
+            if (s.equals("Fusion")) { return FUSION; }
 
             // This shouldn't happen.
-            System.out.println("Bad effect.");
+            System.out.println("Bad effect: " + s);
             return null;
         }
     }
