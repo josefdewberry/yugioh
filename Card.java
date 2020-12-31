@@ -321,7 +321,7 @@ public class Card {
             
             String s = print();
             s = s.concat(code + "\n");
-            s = s.concat("Released on: "+ date.print() + "\n");
+            s = s.concat("Released on: "+ date.toString() + "\n");
             s = s.concat("Released in the " + releaseType + ": " + releaseName + "\n");
             return s;
         }
@@ -372,7 +372,7 @@ public class Card {
             
             String s = print();
             s = s.concat(code + "\n");
-            s = s.concat("Released on: "+ date.print() + "\n");
+            s = s.concat("Released on: "+ date.toString() + "\n");
             s = s.concat("Released in the " + releaseType + ": " + releaseName + "\n");
             return s;
         }
@@ -423,7 +423,7 @@ public class Card {
             
             String s = print();
             s = s.concat(code + "\n");
-            s = s.concat("Released on: "+ date.print() + "\n");
+            s = s.concat("Released on: "+ date.toString() + "\n");
             s = s.concat("Released in the " + releaseType + ": " + releaseName + "\n");
             return s;
         }

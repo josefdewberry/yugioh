@@ -42,12 +42,10 @@ public class Date {
     }
 
     /**
-     * A simple print statement to print the date in MM/DD/YYYY format.
+     * A simple method to turn the date into a string.
      * @return The formatted date.
      */
-    public String print() {
-        String s = "";
-        s += month + "/" + day + "/" + year;
-        return s;
+    public String toString() {
+        return "" + month + "/" + day + "/" + year;
     }
 }
