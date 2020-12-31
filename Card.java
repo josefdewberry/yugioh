@@ -179,6 +179,16 @@ public class Card {
             public String toString() {
                 return("Trap");
             }
+        };
+
+        public static CardType findMatch(String s) {
+            if (s.equals("Monster")) { return MONSTER; }
+            if (s.equals("Spell")) { return SPELL; }
+            if (s.equals("Trap")) { return TRAP; }
+
+            // This shouldn't happen.
+            System.out.println("Bad card type.");
+            return null;
         }
     }
     
