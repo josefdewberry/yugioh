@@ -242,7 +242,6 @@ public class Card {
         this.cardType = cardType;
     }
 
-
     /**
      * Monster cards have other properties that spell/trap cards don't.
      */

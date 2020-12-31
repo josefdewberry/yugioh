@@ -9,8 +9,6 @@ import yugioh.Card.*;
 import yugioh.Date.*;
 
 public class CardReader {
-    
-    public static ArrayList cards = new ArrayList();
 
     public static MonsterCard buildMonster(String cardInfo) {
         String name;
@@ -20,7 +18,6 @@ public class CardReader {
         Date date;
         String releaseName;
         ReleaseType releaseType;
-        CardType cardType;
 
         Attribute attribute;
         int level;
@@ -44,7 +41,6 @@ public class CardReader {
         date = new Date(scanner.next());
         releaseName = scanner.next();
         releaseType = ReleaseType.findMatch(scanner.next());
-        cardType = CardType.MONSTER;
 
         scanner.close();
 
@@ -61,7 +57,6 @@ public class CardReader {
         Date date;
         String releaseName;
         ReleaseType releaseType;
-        CardType cardType;
 
         Scanner scanner = new Scanner(cardInfo);
         
@@ -81,7 +76,6 @@ public class CardReader {
         date = new Date(scanner.next());
         releaseName = scanner.next();
         releaseType = ReleaseType.findMatch(scanner.next());
-        cardType = CardType.SPELL;
 
         scanner.close();
 
@@ -98,7 +92,6 @@ public class CardReader {
         Date date;
         String releaseName;
         ReleaseType releaseType;
-        CardType cardType;
 
         Scanner scanner = new Scanner(cardInfo);
         scanner.useDelimiter("\t");
@@ -117,16 +110,17 @@ public class CardReader {
         date = new Date(scanner.next());
         releaseName = scanner.next();
         releaseType = ReleaseType.findMatch(scanner.next());
-        cardType = CardType.TRAP;
 
         scanner.close();
 
         TrapCard trapCard = new TrapCard(name, description, effect, code, date, releaseName, releaseType);
 
+        System.out.println(trapCard.print());
+        
         return trapCard;
     }
 
-    public static void main(String[] args) {
+    public static ArrayList<Card> read() {
         try {
 
             URL path = CardReader.class.getResource("cards.tsv");
@@ -140,6 +134,8 @@ public class CardReader {
                 System.out.println("Error: no first line!");
                 System.exit(0);
             }
+
+            ArrayList<Card> cards = new ArrayList();
 
             while (scanner.hasNextLine()) {
 
@@ -159,15 +155,15 @@ public class CardReader {
                 switch(cardType) {
                     case "Monster":
                         cards.add(buildMonster(cardInfo));
-                        System.out.println("Monster added!");
+                        // System.out.println("Monster added!");
                         break;
                     case "Spell":
                         cards.add(buildSpell(cardInfo));
-                        System.out.println("Spell added!");
+                        // System.out.println("Spell added!");
                         break;
                     case "Trap":
                         cards.add(buildTrap(cardInfo));
-                        System.out.println("Trap added!");
+                        // System.out.println("Trap added!");
                         break;
                     default:
                         System.out.println("Error: card type not found!");
@@ -175,10 +171,16 @@ public class CardReader {
                 lineScanner.close();
             }
 
+            scanner.close();
+
             System.out.println("We read the cards without breaking!");
             System.out.println("Size: " + cards.size());
+
+            return cards;
         } catch(Exception e) {
             System.out.println("Try catch block broke.");
+            System.exit(0);
         }
+        return null;
     }
 }
