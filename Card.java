@@ -331,7 +331,7 @@ public class Card {
      * Spell cards don't have extra properties. In reality this could be
      * combined with trap cards to form one class. I'll do that later.
      */
-    public static class SpellCard extends Card {
+    public static class NonMonsterCard extends Card {
         
         /**
          * Constructor for a spell card type.
@@ -346,9 +346,9 @@ public class Card {
          * @param releaseType The type of item in which the card was released.
          * @param cardType The card type (i.e. monster, spell, trap).
          */
-        public SpellCard(String name, String description, Effect effect, int code, Date date, 
-                    String releaseName, ReleaseType releaseType) {
-                        super(name, description, effect, code, date, releaseName, releaseType, CardType.SPELL);
+        public NonMonsterCard(String name, String description, Effect effect, int code, Date date, 
+                    String releaseName, ReleaseType releaseType, CardType cardType) {
+                        super(name, description, effect, code, date, releaseName, releaseType, cardType);
         }
 
         /**
@@ -357,64 +357,14 @@ public class Card {
          */
         public String print() {
 
-            String s = "Spell\n";
+            String s = "";
+            s = s.concat(cardType.toString() + "\n");
             s = s.concat(name + "\n");
             s = s.concat(effect + "\n");
             s = s.concat(description + "\n");
             return s;
         }
 
-        /**
-         * Should be renamed to toStringDetailed()
-         * @return The properly formatted string to be printed with extra details.
-         */
-        public String detailedPrint() {
-            
-            String s = print();
-            s = s.concat(code + "\n");
-            s = s.concat("Released on: "+ date.toString() + "\n");
-            s = s.concat("Released in the " + releaseType + ": " + releaseName + "\n");
-            return s;
-        }
-    }
-
-    /**
-     * Spell cards don't have extra properties. In reality this could be
-     * combined with trap cards to form one class. I'll do that later.
-     */
-    public static class TrapCard extends Card {
-    
-        /**
-         * Constructor for a spell card type.
-         * 
-         * @param name The name of the card.
-         * @param description The text of the card, can be the actual rules of the effect
-         * or just a description.
-         * @param effect The type of effect the card has.
-         * @param code The code that is used in yugioh video games as a unique identifier.
-         * @param date The date the card was released.
-         * @param releaseName The name of the release item.
-         * @param releaseType The type of item in which the card was released.
-         * @param cardType The card type (i.e. monster, spell, trap).
-         */
-        public TrapCard(String name, String description, Effect effect, int code, Date date, 
-                    String releaseName, ReleaseType releaseType) {
-                        super(name, description, effect, code, date, releaseName, releaseType, CardType.TRAP);
-        }
-    
-        /**
-         * Should be renamed to toString()
-         * @return A properly formatted string to be printed.
-         */
-        public String print() {
-    
-            String s = "Trap\n";
-            s = s.concat(name + "\n");
-            s = s.concat(effect + "\n");
-            s = s.concat(description + "\n");
-            return s;
-        }
-    
         /**
          * Should be renamed to toStringDetailed()
          * @return The properly formatted string to be printed with extra details.

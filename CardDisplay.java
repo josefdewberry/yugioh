@@ -73,11 +73,8 @@ public class CardDisplay {
                         if (cards.get(i).cardType == CardType.MONSTER) {
                             MonsterCard printCard = (MonsterCard) cards.get(i);
                             System.out.println("\n" + printCard.print());
-                        } else if (cards.get(i).cardType == CardType.SPELL) {
-                            SpellCard printCard = (SpellCard) cards.get(i);
-                            System.out.println("\n" + printCard.print());
-                        } else if (cards.get(i).cardType == CardType.TRAP) {
-                            TrapCard printCard = (TrapCard) cards.get(i);
+                        } else if (cards.get(i).cardType == CardType.SPELL || cards.get(i).cardType == CardType.TRAP) {
+                            NonMonsterCard printCard = (NonMonsterCard) cards.get(i);
                             System.out.println("\n" + printCard.print());
                         }
                     }

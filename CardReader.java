@@ -49,7 +49,7 @@ public class CardReader {
         return monsterCard;
     }
 
-    public static SpellCard buildSpell(String cardInfo) {
+    public static NonMonsterCard buildNonMonster(String cardInfo, CardType cardType) {
         String name;
         String description;
         Effect effect;
@@ -79,45 +79,9 @@ public class CardReader {
 
         scanner.close();
 
-        SpellCard spellCard = new SpellCard(name, description, effect, code, date, releaseName, releaseType);
+        NonMonsterCard nonMonster = new NonMonsterCard(name, description, effect, code, date, releaseName, releaseType, cardType);
 
-        return spellCard;
-    }
-
-    public static TrapCard buildTrap(String cardInfo) {
-        String name;
-        String description;
-        Effect effect;
-        int code;
-        Date date;
-        String releaseName;
-        ReleaseType releaseType;
-
-        Scanner scanner = new Scanner(cardInfo);
-        scanner.useDelimiter("\t");
-        scanner.next();
-        effect = Effect.findMatch(scanner.next());
-        name = scanner.next();
-
-        scanner.next();
-        scanner.next();
-        scanner.next();
-        scanner.next();
-        scanner.next();
-
-        description = scanner.next();
-        code = scanner.nextInt();
-        date = new Date(scanner.next());
-        releaseName = scanner.next();
-        releaseType = ReleaseType.findMatch(scanner.next());
-
-        scanner.close();
-
-        TrapCard trapCard = new TrapCard(name, description, effect, code, date, releaseName, releaseType);
-
-        System.out.println(trapCard.print());
-        
-        return trapCard;
+        return nonMonster;
     }
 
     public static ArrayList<Card> read() {
@@ -155,15 +119,12 @@ public class CardReader {
                 switch(cardType) {
                     case "Monster":
                         cards.add(buildMonster(cardInfo));
-                        // System.out.println("Monster added!");
                         break;
                     case "Spell":
-                        cards.add(buildSpell(cardInfo));
-                        // System.out.println("Spell added!");
+                        cards.add(buildNonMonster(cardInfo, CardType.SPELL));
                         break;
                     case "Trap":
-                        cards.add(buildTrap(cardInfo));
-                        // System.out.println("Trap added!");
+                        cards.add(buildNonMonster(cardInfo, CardType.TRAP));
                         break;
                     default:
                         System.out.println("Error: card type not found!");
