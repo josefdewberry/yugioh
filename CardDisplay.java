@@ -18,12 +18,7 @@ public class CardDisplay {
     // A list of all the cards available
     public static ArrayList<Card> cards;
 
-    /**
-     * Gathers all the cards into an arraylist and then prompts the user
-     * what cards to read.
-     * @param args User arguments, none used here.
-     */
-    public static void main(String[] args) {
+    public static String allCardNames() {
 
         // Runs the CardReader program to read all the cards
         // from cards.tsv
@@ -31,9 +26,23 @@ public class CardDisplay {
 
         // Prints every single cards name, in case the user
         // is looking for a specific card.
-        for (int i = 0; i < cards.size(); i++) {
-            System.out.println(cards.get(i).name);
+        String s = cards.get(0).name;
+
+        for (int i = 1; i < cards.size(); i++) {
+            s = s.concat("\n" + cards.get(i).name);
         }
+
+        return s;
+    }
+
+    /**
+     * Gathers all the cards into an arraylist and then prompts the user
+     * what cards to read.
+     * @param args User arguments, none used here.
+     */
+    public static void main(String[] args) {
+
+        allCardNames();
 
         // Space things out.
         System.out.println();
