@@ -55,6 +55,13 @@ public class Card {
             public String toString() {
                 return("Fusion");
             }
+        },
+        
+        // Applicable only to non-monster cards.
+        COUNTER {
+            public String toString() {
+                return("Counter");
+            }
         };
 
         // Effects are given as strings, so this is for ease of matching
@@ -67,6 +74,7 @@ public class Card {
             if (s.equals("Effect")) { return EFFECT; }
             if (s.equals("Continuous")) { return CONTINUOUS; }
             if (s.equals("Fusion")) { return FUSION; }
+            if (s.equals("Counter")) { return COUNTER; }
 
             // This shouldn't happen.
             System.out.println("Bad effect: " + s);
@@ -198,9 +206,9 @@ public class Card {
      */
     public enum ReleaseType {
         // One of those silver sleeves with like 10 cards.
-        SET {
+        BOOSTER {
             public String toString() {
-                return("Set");
+                return("Booster Pack");
             }
         },
         
@@ -213,7 +221,7 @@ public class Card {
         // Sets come as strings, so this is to easily match
         // the string to the proper enum.
         public static ReleaseType findMatch(String s) {
-            if (s.equals("Set")) { return SET; }
+            if (s.equals("Booster Pack")) { return BOOSTER; }
             if (s.equals("Starter Deck")) { return STARTER; }
 
             // This shouldn't happen.
