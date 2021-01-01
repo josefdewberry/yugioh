@@ -1,127 +1,186 @@
 CARD TYPE	EFFECT	NAME	ATTRIBUTE	LEVEL	TYPE	ATK	DEF	DESCRIPTION	CODE	RELEASE DATE	ORIGINAL RELEASE NAME	ORIGINAL RELEASE TYPE
-Monster	Normal	Armored Starfish	WATER	4	Aqua	850	1400	A bluish starfish with a solid hide capable of fending off attacks.	17535588	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	The Furious Sea King	WATER	3	Aqua	800	700	Grand King of the Seven Seas, he's able to summon massive tidal waves to drown the enemy.	18710707	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Turtle Tiger	WATER	4	Aqua	1000	1500	A tiger encased in a protective shell that attacks with razor-sharp fangs.	37313348	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Dark Gray	EARTH	3	Beast	800	900	Entirely gray, this beast has rarely been seen by mortal eyes.	09159938	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Fusion	Flower Wolf	EARTH	5	Beast	1800	1400	"Silver Fang" + "Darkworld Thorns"	95952802	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Frenzied Panda	EARTH	4	Beast	1200	1000	A savage beast that carries a big bamboo stick for beating down its enemies.	98818516	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Fusion	Fusionist	EARTH	3	Beast	900	700	"Petit Angel" + "Mystical Sheep #2"	01641882	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Flip	Hane-Hane	EARTH	2	Beast	450	500	FLIP: Return 1 monster on the field to its owner's hand.	07089711	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Mystical Sheep #2	EARTH	3	Beast	800	1000	A monstrous sheep with a long tail for hypnotizing enemies.	83454209	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Silver Fang	EARTH	3	Beast	1200	800	A snow wolf that's beautiful to the eye, but absolutely vicious in battle.	90357090	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Beaver Warrior	EARTH	4	Beast-Warrior	1200	1500	What this creature lacks in size it makes up for in defense when battling in the prairie.	32452818	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Hitotsu-Me Giant	EARTH	4	Beast-Warrior	1200	1000	A one-eyed behmoth with thick, powerful arms made for delivering punishing blows.	76184692	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Larvas	EARTH	3	Beast-Warrior	800	1000	A fast-moving, bird-lide creature that strangles opposing monsters with its long, thin arms.	94675535	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Mammoth Graveyard	EARTH	3	Dinosaur	1200	800	A mammoth that protects the graves of its pack and is absolutely merciless when facing grave-robbers.	40374923	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Two-Mouth Darkruler	EARTH	3	Dinosaur	900	700	A dinosaur with two deadly jaws, it stores electricity in its horn and releases high voltage bolts from the mouth on its back.	57305373	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Uraby	EARTH	4	Dinosaur	1500	800	Fast on its feet, this dinosaur rips enemies to shreds with its sharp claws.	01784619	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Blue-Eyes White Dragon	LIGHT	8	Dragon	3000	2500	This legendary dragon is a powerful engine of destruction. Virtually invincible, very few have faced this awesome creature and lived to tell the tale.	89631139	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Curse of Dragon	DARK	5	Dragon	2000	1500	A wicked dragon that taps into dark forces to execute a powerful attack.	28279543	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Fusion	Darkfire Dragon	DARK	4	Dragon	1500	1250	"Firegrass" + "Petit Dragon"	17881964	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Fusion	Gaia the Dragon Champion	WIND	7	Dragon	2600	2100	"Gaia The Fierce Knight" + "Curse of Dragon"	66889139	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Lesser Dragon	WIND	4	Dragon	1200	1000	A minor dragon incapable of breathing fire.	55444629	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	One-Eyed Shield Dragon	WIND	3	Dragon	700	1300	This dragon wears a shield not only for its own protection, but also for ramming its enemies.	33064647	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Petit Dragon	WIND	2	Dragon	600	700	A very small dragon known for its vicious attacks.	75356564	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Red-Eyes Black Dragon	DARK	7	Dragon	2400	2000	A ferocious dragon with a deadly attack.	74677422	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Tri-Horned Dragon	DARK	8	Dragon	2850	2350	An unworthy dragon with three sharp horns sprouting from its head.	39111158	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Petit Angel	LIGHT	3	Fairy	600	900	A quick-moving and tiny fairy that's very difficult to hit.	38142739	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Ray & Temperature	LIGHT	3	Fairy	1000	1000	The sun and the North Wind join hands to deliver a devastating combination of heat and gale-force winds.	85309439	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Spirit of the Harp	LIGHT	4	Fairy	800	2000	A spirit that soothes the soul with the music of its heavenly harmp.	80770678	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Dark King of the Abyss	DARK	3	Fiend	1200	800	It's said that this King of the Netherworld once had the power to rule over the dark.	53375573	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	King Fog	DARK	3	Fiend	100	900	A fiend that dwells in a blinding curtain of smoke.	84686841	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Meda Bat	DARK	2	Fiend	800	400	An eyeball fiend created by a servant of the wicked, it uses "Dark Blasts" to blow away its enemies.	76211194	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Flip	Reaper of the Cards	DARK	5	Fiend	1380	1930	FLIP: Select 1 Trap Card on the field and destroy it. If the selected card is Set, pick up and see the card. If it is a Trap Card, it is destroyed. If it is a Spell Card, return it to its original position.	33066139	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Terra the Terrible	DARK	4	Fiend	1200	1300	Known as a swamp dweller, this creature is a minion of the dark forces.	63308047	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Trial of Nightmare	DARK	4	Fiend	1300	900	This fiend passes judgement on enemies that are locked in coffins.	77827521	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Witty Phantom	DARK	4	Fiend	1400	1300	Dressed in a night-black tuxedo, this creature presides over the darkness.	36304921	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Enchanting Mermaid	WATER	3	Fish	1200	900	A beautiful mermaid that lures voyagers to a watery grave.	75376965	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Misairuzame	WATER	5	Fish	1400	1600	A missile-launching fish protected by deadly spikes.	33178416	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Root Water	WATER	3	Fish	900	800	An amphibian capable of calling up a massive tidal wave from the dark seas to wipe out enemy monsters.	39004808	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Basic Insect	EARTH	2	Insect	500	700	Usually found traveling in swarms, this creature's ideal environment is the forest.	89091579	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Kumootoko	EARTH	3	Insect	700	1400	A massive, intelligent spider that traps enemies with webbing.	56283725	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Flip	Man-Eater Bug	EARTH	2	Insect	450	600	FLIP: Target 1 monster on the field; destroy that target.	54652250	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Fusion	Metal Dragon	WIND	6	Machine	1850	1700	"Steel Ogre Grotto #1" + "Lesser Dragon"	09293977	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Steel Ogre Grotto #1	EARTH	5	Machine	1400	1800	A steel idol worshipped in the Land of Machines.	29172562	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Darkworld Thorns	EARTH	3	Plant	1200	900	A thorny plant found in the darklands that wraps itself around any unwary traveler	43500484	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Firegrass	EARTH	2	Plant	700	600	A fire-breathing plant found growing near volcanoes.	53293545	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Green Phantom King	EARTH	3	Plant	500	1600	This youthful king of the forests lives in a green world, abundant with trees and wildlife.	22910685	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Man Eater	EARTH	2	Plant	800	600	Man-eating plant with poison feelers for attacking enemies.	93553943	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Fusion	Charubin the Fire Knight	FIRE	3	Pyro	1100	800	"Monster Egg" + "Hinotama Soul"	37421579	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Fireyarou	FIRE	4	Pyro	1300	1000	A malevolent creature wrapped in flames that attacks enemies with intense fire.	71407486	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Hinotama Soul	FIRE	2	Pyro	600	500	An intensely hot flame creature that rams anything standing in its way.	96851799	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Drooling Lizard	EARTH	3	Reptile	900	800	A blood-sucking snake in human form that attacks any living being that passes nearby.	16353197	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Dissolverock	EARTH	3	Rock	900	1000	A monster born in the lava pits, it generates intense heat that can melt away its enemies.	40826495	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Giant Soldier of Stone	EARTH	3	Rock	1300	2000	A giant warrior made of stone. A punch from this creature has earth-shaking results.	13039848	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Sand Stone	EARTH	5	Rock	1300	1600	Appears from underground and attacks with long, snake-like tentacles.	73051941	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Spike Seadra	WATER	5	Sea Serpent	1600	1300	Using the spikes sprouting from its body, this creature stabs its opponents and floods them with electricity.	85326399	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Spell	Normal	Ancient Elf	LIGHT	4	Spellcaster	1450	1200	This elf is rumored to have lived for thousands of years. He leads an army of spirits against his enemies.	93221206	03/29/2002	Yugi	Starter Deck
+Spell	Normal	Ancient Telescope						See the top 5 cards of your opponent's Deck. Return the cards to the Deck in the same order.	17092736	03/29/2002	Kaiba	Starter Deck
+Monster	Normal	Ansatsu	EARTH	5	Warrior	1700	1200	A silent and deadly warrior specializing in assassinations.	48365709	03/29/2002	Yugi	Starter Deck
 Monster	Normal	Aqua Madoor	WATER	4	Spellcaster	1200	2000	A wizard of the waters that conjures a liquid wall to crush any enemies that oppose him.	85639257	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Dark Magician	DARK	7	Spellcaster	2500	2100	The ultimate wizard in terms of attack and defense.	46986414	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Effect	Exodia the Forbidden One	DARK	3	Spellcaster	1000	1000	If you have "Right Leg of the Forbidden One", "Left Leg of the Forbidden One", "Right Arm of the Forbidden One" and "Left Arm of the Forbidden One" in addition to this card in your hand, you win the Duel.	33396948	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Flame Manipulator	FIRE	3	Spellcaster	900	1000	This Spellcaster attacks enemies with fire-related spells such as "Sea of Flames" and "Wall of Fire".	34460851	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Left Arm of the Forbidden One	DARK	1	Spellcaster	200	300	A forbidden left arm sealed by magic. Whosoever breaks this seal will know infinite power.	07902349	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Left Leg of the Forbidden One	DARK	1	Spellcaster	200	300	A forbidden left leg sealed by magic. Whosoever breaks this seal will know infinite power.	44519536	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Mystical Elf	LIGHT	4	Spellcaster	800	2000	A delicate elf that lacks offense, but has a terrific defense backed by mystical power.	15025844	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Nemuriko	DARK	3	Spellcaster	800	700	A child-like creature that controls a sleep fiend to beckon enemies into eternal slumber.	90963488	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Right Arm of the Forbidden One	DARK	1	Spellcaster	200	300	A forbidden right arm sealed by magic. Whosoever breaks this seal will know infinite power.	70903634	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Right Leg of the Forbidden One	DARK	1	Spellcaster	200	300	A forbidden right leg sealed by magic. Whosoever breaks this seal will know infinite power.	08124921	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Tripwire Beast	EARTH	4	Thunder	1200	1300	This creature attacks with electromagnetic waves.	45042329	03/08/2002	Legend of Blue Eyes White Dragon	Set
 Monster	Normal	Armaill	EARTH	3	Warrior	700	1300	A strange warrior who maniuplates three deadly blades with both hands and his tail.	53153481	03/08/2002	Legend of Blue Eyes White Dragon	Set
 Monster	Flip	Armed Ninja	EARTH	1	Warrior	300	300	FLIP: Target 1 Spell Card on the field; destroy that target. (If the target is Set, reveal it, and destroy it if it is a Spell Card. Otherwise, return it to its original position.)	09076207	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Celtic Guardian	EARTH	4	Warrior	1400	1200	An elf who learned to wield a sword, he baffles enemies with lightning-swift attacks.	91152256	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Fusion	Dragoness the Wicked Knight	WIND	3	Warrior	1200	900	"Armaill" + "One-Eyed Shield Dragon"	70681994	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Fusion	Flame Swordsman	FIRE	5	Warrior	1800	1600	"Flame Manipulator" + "Masaki the Legendary Swordsman"	45231177	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Gaia The Fierce Knight	EARTH	7	Warrior	2300	2100	A knight whose horse travels faster than the wind. His battle-charge is a force to be reckoned with.	06368038	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Hard Armor	EARTH	3	Warrior	300	1200	A living suit of armor that attacks enemies with a bone-jarring tackle.	20060230	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Kagemusha of the Blue Flame	EARTH	2	Warrior	800	400	Serving as a double for the Ruler of the Blue Flame, he's a master swordsman that wields a fine blade.	15401633	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Fusion	Karbonala Warrior	EARTH	4	Warrior	1500	1200	"M-Warrior #1" + "M-Warrior #2"	54541900	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	M-Warrior #1	EARTH	3	Warrior	1000	500	Specializing in combination attacks, this warrior uses magnetism to block an enemy's escape.	56342351	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	M-Warrior #2	EARTH	3	Warrior	500	1000	Specializing in combination attacks, this warrior is equipped with a tough, magnetically coated armor.	92731455	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Masaki the Legendary Swordsman	EARTH	4	Warrior	1100	1100	Legendary swordmaster Masaki is a veteran of over 100 battles.	44287299	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Monster Egg	EARTH	3	Warrior	600	900	A warrior hidden with an egg that attacks enemies by flinging eggshells.	36121917	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Succubus Knight	DARK	5	Warrior	1650	1300	A warrior wizard adept in casting bone-chilling spells.	55291359	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Fiend Reflection #2	LIGHT	4	Winged Beast	1100	1400	A bird-beast that summons reinforcements with a hand mirror	02863439	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Kurama	WIND	3	Winged Beast	800	800	A vicious bird that attacks from the skies with its whip-like tail.	85705804	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Skull Red Bird	WIND	4	Winged Beast	1550	1200	This monster swoops down and attacks with a rain of knives stored in its wings.	10202894	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Tyhone	WIND	4	Winged Beast	1200	1400	Capable of firing cannonballs from its mouth for long-range attacks, this creature is particularly effective in mountain battles.	72842870	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Fusion	Flame Ghost	DARK	3	Zombie	1000	800	"Skull Servant" + "Dissolverock"	58528964	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	Skull Servant	DARK	1	Zombie	300	200	A skeletal ghost that isn't strong but can mean trouble in large numbers.	32274490	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Monster	Normal	The 13th Grave	DARK	3	Zombie	1200	900	A zombie that appeared from plot #13 - an empty grave.	00032864	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Armored Starfish	WATER	4	Aqua	850	1400	A bluish starfish with a solid hide capable of fending off attacks.	17535588	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Baron of the Fiend Sword	DARK	4	Fiend	1550	800	An aristocrat who wields a sword possessed by a malicious spirit that preys on the weak.	86325596	03/29/2002	Yugi	Starter Deck
+Monster	Normal	Basic Insect	EARTH	2	Insect	500	700	Usually found traveling in swarms, this creature's ideal environment is the forest.	89091579	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Battle Ox	EARTH	4	Beast-Warrior	1700	1000	A monster with tremendous power, it destroys enemies with a swing of its axe.	05053103	03/29/2002	Kaiba	Starter Deck
 Spell	Equip	Beast Fangs						A Beast-Type monster equipped with this card increases its ATK and DEF by 300 points.	46009906	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Beaver Warrior	EARTH	4	Beast-Warrior	1200	1500	What this creature lacks in size it makes up for in defense when battling in the prairie.	32452818	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Blue-Eyes White Dragon	LIGHT	8	Dragon	3000	2500	This legendary dragon is a powerful engine of destruction. Virtually invincible, very few have faced this awesome creature and lived to tell the tale.	89631139	03/08/2002	Legend of Blue Eyes White Dragon	Set
 Spell	Equip	Book of Secret Arts						A Spellcaster-Type monster equipped with this card increases its ATK and DEF by 300 points	91595718	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Spell	Normal	Card Destruction						Both players discard as many cards as possible from their hands, then each player draws the same number of cards they discarded.	72892473	03/29/2002	Yugi	Starter Deck
+Trap	Normal	Castle Walls						Increase the DEF of 1 face-up monster on the field by 500 points until the end of this turn.	44209392	03/29/2002	Yugi	Starter Deck
+Monster	Normal	Celtic Guardian	EARTH	4	Warrior	1400	1200	An elf who learned to wield a sword, he baffles enemies with lightning-swift attacks.	91152256	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Spell	Normal	Change of Heart						Target 1 monster your opponent controls; take contol of it until the End Phase.	04031928	03/29/2002	Yugi	Starter Deck
+Monster	Fusion	Charubin the Fire Knight	FIRE	3	Pyro	1100	800	"Monster Egg" + "Hinotama Soul"	37421579	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Claw Reacher	DARK	3	Fiend	1000	800	Stretching arms and razor-sharp claws make this monster a formidable opponent.	41218256	03/29/2002	Yugi	Starter Deck
+Monster	Normal	Curse of Dragon	DARK	5	Dragon	2000	1500	A wicked dragon that taps into dark forces to execute a powerful attack.	28279543	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	D. Human	EARTH	4	Warrior	1300	1100	Gifted with the power of dragons, this warrior wields a sword created from a dragon's fang.	81057959	03/29/2002	Kaiba	Starter Deck
+Monster	Normal	Dark Assailant	DARK	4	Zombie	1200	1200	Armed with the Psycho Sword, this sinister assassin rules the bad land.	41949033	03/29/2002	Kaiba	Starter Deck
 Spell	Equip	Dark Energy						Increase the ATK and DEF of a Fiend-Type monster equipped with this card by 300 points.	04614116	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Dark Gray	EARTH	3	Beast	800	900	Entirely gray, this beast has rarely been seen by mortal eyes.	09159938	03/08/2002	Legend of Blue Eyes White Dragon	Set
 Spell	Normal	Dark Hole						Destory all monsters on the field.	53129443	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Dark King of the Abyss	DARK	3	Fiend	1200	800	It's said that this King of the Netherworld once had the power to rule over the dark.	53375573	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Dark Magician	DARK	7	Spellcaster	2500	2100	The ultimate wizard in terms of attack and defense.	46986414	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Dark Titan of Terror	DARK	4	Fiend	1300	1100	A fiend said to dwell in the world of dreams, it attacks enemies in their sleep.	89494469	03/29/2002	Kaiba	Starter Deck
+Monster	Fusion	Darkfire Dragon	DARK	4	Dragon	1500	1250	"Firegrass" + "Petit Dragon"	17881964	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Darkworld Thorns	EARTH	3	Plant	1200	900	A thorny plant found in the darklands that wraps itself around any unwary traveler	43500484	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Spell	Normal	De-Spell						Target 1 face-up Spell, or 1 Set Spell/Trap on the field; destroy that target if it is a Spell. (If the target is Set, reveal it.)	19159413	03/29/2002	Yugi	Starter Deck
+Monster	Normal	Destroyer Golem	EARTH	4	Rock	1500	1000	A golem with a massive right hand for crushing its victims.	73481154	03/29/2002	Kaiba	Starter Deck
+Spell	Normal	Dian Keto the Cure Master						Increase your Life Points by 1000 points.	84257639	03/29/2002	Yugi	Starter Deck
+Monster	Normal	Dissolverock	EARTH	3	Rock	900	1000	A monster born in the lava pits, it generates intense heat that can melt away its enemies.	40826495	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Doma The Angel of Silence	DARK	5	Fairy	1600	1400	This fairy rules over the end of existence.	16972957	03/29/2002	Yugi	Starter Deck
+Trap	Continuous	Dragon Capture Jar						Change all face-up Dragon-Type monsters on the field to Defense Position, also they cannot change their battle positions.	50045299	03/08/2002	Legend of Blue Eyes White Dragon	Set
 Spell	Equip	Dragon Treasure						A Dragon-Type monster equipped with this card increases its ATK and DEF by 300 points.	01435851	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Dragon Zombie	DARK	3	Zombie	1600	0	A dragon revived by sorcery. Its breath is highly corrosive.	66672569	03/29/2002	Yugi	Starter Deck
+Monster	Fusion	Dragoness the Wicked Knight	WIND	3	Warrior	1200	900	"Armaill" + "One-Eyed Shield Dragon"	70681994	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Drooling Lizard	EARTH	3	Reptile	900	800	A blood-sucking snake in human form that attacks any living being that passes nearby.	16353197	03/08/2002	Legend of Blue Eyes White Dragon	Set
 Spell	Equip	Electro-Whip						Increase the ATK and DEF of a Thunder-Type monster equipped with this card by 300 point.	37820550	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Enchanting Mermaid	WATER	3	Fish	1200	900	A beautiful mermaid that lures voyagers to a watery grave.	75376965	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Effect	Exodia the Forbidden One	DARK	3	Spellcaster	1000	1000	If you have "Right Leg of the Forbidden One", "Left Leg of the Forbidden One", "Right Arm of the Forbidden One" and "Left Arm of the Forbidden One" in addition to this card in your hand, you win the Duel.	33396948	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Feral Imp	DARK	4	Fiend	1300	1400	A playful little fiend that lurks in the dark, waiting to attack an unwary enemy.	41392891	03/29/2002	Yugi	Starter Deck
+Monster	Normal	Fiend Reflection #2	LIGHT	4	Winged Beast	1100	1400	A bird-beast that summons reinforcements with a hand mirror	02863439	03/08/2002	Legend of Blue Eyes White Dragon	Set
 Spell	Normal	Final Flame						Inflict 600 points of damage to your opponent's Life Points.	73134081	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Firegrass	EARTH	2	Plant	700	600	A fire-breathing plant found growing near volcanoes.	53293545	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Fireyarou	FIRE	4	Pyro	1300	1000	A malevolent creature wrapped in flames that attacks enemies with intense fire.	71407486	03/08/2002	Legend of Blue Eyes White Dragon	Set
 Spell	Normal	Fissure						Destroy the 1 face-up monster your opponent controls that has the lowest ATK (your choice, if tied).	66788016	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Fusion	Flame Ghost	DARK	3	Zombie	1000	800	"Skull Servant" + "Dissolverock"	58528964	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Flame Manipulator	FIRE	3	Spellcaster	900	1000	This Spellcaster attacks enemies with fire-related spells such as "Sea of Flames" and "Wall of Fire".	34460851	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Fusion	Flame Swordsman	FIRE	5	Warrior	1800	1600	"Flame Manipulator" + "Masaki the Legendary Swordsman"	45231177	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Fusion	Flower Wolf	EARTH	5	Beast	1800	1400	"Silver Fang" + "Darkworld Thorns"	95952802	03/08/2002	Legend of Blue Eyes White Dragon	Set
 Spell	Equip	Follow Wind						Increase the ATK and DEF of a Winged-Beast-Type monster equipped with this card by 300 points.	98252586	03/08/2002	Legend of Blue Eyes White Dragon	Set
 Spell	Field	Forest						All Insect, Beast, Plant, and Beast-Warrior monsters on the field gain 200 ATK/DEF.	87430998	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Frenzied Panda	EARTH	4	Beast	1200	1000	A savage beast that carries a big bamboo stick for beating down its enemies.	98818516	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Fusion	Fusionist	EARTH	3	Beast	900	700	"Petit Angel" + "Mystical Sheep #2"	01641882	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Fusion	Gaia the Dragon Champion	WIND	7	Dragon	2600	2100	"Gaia The Fierce Knight" + "Curse of Dragon"	66889139	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Gaia The Fierce Knight	EARTH	7	Warrior	2300	2100	A knight whose horse travels faster than the wind. His battle-charge is a force to be reckoned with.	06368038	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Giant Soldier of Stone	EARTH	3	Rock	1300	2000	A giant warrior made of stone. A punch from this creature has earth-shaking results.	13039848	03/08/2002	Legend of Blue Eyes White Dragon	Set
 Spell	Normal	Goblin's Secret Remedy						Increase your Life Points by 600 points.	11868825	03/08/2002	Legend of Blue Eyes White Dragon	Set
 Spell	Normal	Gravedigger Ghoul						Select up to 2 Monster Card(s) from your opponent's Graveyard. Remove the selected card(s) from play.	82542267	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Great White	WATER	4	Fish	1600	800	A giant white shark with razor-sharp teeth.	13429800	03/29/2002	Yugi	Starter Deck
+Monster	Normal	Green Phantom King	EARTH	3	Plant	500	1600	This youthful king of the forests lives in a green world, abundant with trees and wildlife.	22910685	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Gyakutenno Megami	LIGHT	6	Fairy	1800	2000	This fairy uses her mystical power to protect the weak and provide spiritual support.	31122090	03/29/2002	Kaiba	Starter Deck
+Monster	Flip	Hane-Hane	EARTH	2	Beast	450	500	FLIP: Return 1 monster on the field to its owner's hand.	07089711	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Hard Armor	EARTH	3	Warrior	300	1200	A living suit of armor that attacks enemies with a bone-jarring tackle.	20060230	03/08/2002	Legend of Blue Eyes White Dragon	Set
 Spell	Normal	Hinotama						Inflict 500 damage to your opponent.	46130346	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Hinotama Soul	FIRE	2	Pyro	600	500	An intensely hot flame creature that rams anything standing in its way.	96851799	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Hitotsu-Me Giant	EARTH	4	Beast-Warrior	1200	1000	A one-eyed behmoth with thick, powerful arms made for delivering punishing blows.	76184692	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Spell	Equip	Invigoration						An EARTH monster equipped with this card increases its ATK by 400 points and decreases its DEF by 200 points.	98374133	03/29/2002	Kaiba	Starter Deck
+Monster	Normal	Judge Man	EARTH	6	Warrior	2200	1500	This club-wielding warrior battles to the end and will never surrender.	30113682	03/29/2002	Kaiba	Starter Deck
+Trap	Normal	Just Desserts						Inflict 500 damage to your opponent for each monster they control.	24068492	03/29/2002	Kaiba	Starter Deck
+Monster	Normal	Kagemusha of the Blue Flame	EARTH	2	Warrior	800	400	Serving as a double for the Ruler of the Blue Flame, he's a master swordsman that wields a fine blade.	15401633	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Fusion	Karbonala Warrior	EARTH	4	Warrior	1500	1200	"M-Warrior #1" + "M-Warrior #2"	54541900	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	King Fog	DARK	3	Fiend	100	900	A fiend that dwells in a blinding curtain of smoke.	84686841	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Kojikocy	EARTH	4	Warrior	1500	1200	A man-hunter with powerful arms that can crush boulders.	01184620	03/29/2002	Kaiba	Starter Deck
+Monster	Normal	Koumori Dragon	DARK	4	Dragon	1500	1200	A vicious, fire-breathing dragon whose wicked flame corrupts the souls of its victims.	67724379	03/29/2002	Kaiba	Starter Deck
+Monster	Normal	Kumootoko	EARTH	3	Insect	700	1400	A massive, intelligent spider that traps enemies with webbing.	56283725	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Kurama	WIND	3	Winged Beast	800	800	A vicious bird that attacks from the skies with its whip-like tail.	85705804	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	La Jinn the Mystical Genie of the Lamp	DARK	4	Fiend	1800	1000	A genie of the lamp that is at the beck and call of its master.	97590747	03/29/2002	Kaiba	Starter Deck
+Monster	Normal	Larvas	EARTH	3	Beast-Warrior	800	1000	A fast-moving, bird-lide creature that strangles opposing monsters with its long, thin arms.	94675535	03/08/2002	Legend of Blue Eyes White Dragon	Set
 Spell	Equip	Laser Cannon Armor						Increase the ATK and DEF of an Insect-Type monster equipped with this card by 300 points.	77007920	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Spell	Normal	Last Will						If a monster on your side of the field was sent to your Graveyard this turn, you can Special Summon 1 monster with an ATK of 1500 points or less from your Deck once during this turn. Then shuffle your Deck.	85602018	03/29/2002	Yugi	Starter Deck
+Monster	Normal	Left Arm of the Forbidden One	DARK	1	Spellcaster	200	300	A forbidden left arm sealed by magic. Whosoever breaks this seal will know infinite power.	07902349	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Left Leg of the Forbidden One	DARK	1	Spellcaster	200	300	A forbidden left leg sealed by magic. Whosoever breaks this seal will know infinite power.	44519536	03/08/2002	Legend of Blue Eyes White Dragon	Set
 Spell	Equip	Legendary Sword						Equip only to a Warrior monster. It gains 300 ATK/DEF.	61854111	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Lesser Dragon	WIND	4	Dragon	1200	1000	A minor dragon incapable of breathing fire.	55444629	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Effect	Lord of D.	DARK	4	Spellcaster	1200	1100	Neither player can target Dragon monsters on the field with card effects.	17985575	03/29/2002	Kaiba	Starter Deck
+Monster	Normal	M-Warrior #1	EARTH	3	Warrior	1000	500	Specializing in combination attacks, this warrior uses magnetism to block an enemy's escape.	56342351	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	M-Warrior #2	EARTH	3	Warrior	500	1000	Specializing in combination attacks, this warrior is equipped with a tough, magnetically coated armor.	92731455	03/08/2002	Legend of Blue Eyes White Dragon	Set
 Spell	Equip	Machine Conversion Factory						A Machine-Type monster equipped with this card increases its ATK and DEF by 300 points.	25769732	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Magical Ghost	DARK	4	Zombie	1300	1400	This creature casts a spell of terror and confusion just before attacking its enemies.	46474915	03/29/2002	Yugi	Starter Deck
+Monster	Normal	Mammoth Graveyard	EARTH	3	Dinosaur	1200	800	A mammoth that protects the graves of its pack and is absolutely merciless when facing grave-robbers.	40374923	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Man Eater	EARTH	2	Plant	800	600	Man-eating plant with poison feelers for attacking enemies.	93553943	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Flip	Man-Eater Bug	EARTH	2	Insect	450	600	FLIP: Target 1 monster on the field; destroy that target.	54652250	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Man-Eating Treasure Chest	DARK	4	Fiend	1600	1000	A monster disguised as a treasure chest that is known to attack the unwary adventurer.	13723605	03/29/2002	Yugi	Starter Deck
+Monster	Normal	Masaki the Legendary Swordsman	EARTH	4	Warrior	1100	1100	Legendary swordmaster Masaki is a veteran of over 100 battles.	44287299	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Master & Expert	EARTH	4	Beast	1200	1000	A deadly duo consisting of a beast master and its loyal servant.	75499502	03/29/2002	Kaiba	Starter Deck
+Monster	Normal	Meda Bat	DARK	2	Fiend	800	400	An eyeball fiend created by a servant of the wicked, it uses "Dark Blasts" to blow away its enemies.	76211194	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Fusion	Metal Dragon	WIND	6	Machine	1850	1700	"Steel Ogre Grotto #1" + "Lesser Dragon"	09293977	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Misairuzame	WATER	5	Fish	1400	1600	A missile-launching fish protected by deadly spikes.	33178416	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Monster Egg	EARTH	3	Warrior	600	900	A warrior hidden with an egg that attacks enemies by flinging eggshells.	36121917	03/08/2002	Legend of Blue Eyes White Dragon	Set
 Spell	Normal	Monster Reborn						Target 1 monster in either GY; Special Summon it.	83764718	03/08/2002	Legend of Blue Eyes White Dragon	Set
 Spell	Field	Mountain						All Dragon, Winged Beast, and Thunder monsters on the field gain 200 ATK/DEF.	50913601	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Effect	Mysterious Puppeteer	EARTH	4	Warrior	1000	1500	Each time you or your opponent Normal Summons or Flip Summons a monster, increase your Life Points by 500 points.	54098121	03/29/2002	Kaiba	Starter Deck
+Monster	Normal	Mystic Clown	DARK	4	Fiend	1500	1000	Nothing can stop the mad attack of this powerful creature.	47060154	03/29/2002	Yugi	Starter Deck
+Monster	Normal	Mystic Horseman	EARTH	4	Beast	1300	1550	Half man and half horse, this monster is known for its extreme speed.	68516705	03/29/2002	Kaiba	Starter Deck
+Monster	Normal	Mystical Elf	LIGHT	4	Spellcaster	800	2000	A delicate elf that lacks offense, but has a terrific defense backed by mystical power.	15025844	03/08/2002	Legend of Blue Eyes White Dragon	Set
 Spell	Equip	Mystical Moon						Equip only to a Beast-Warrior-Type monster. It gains 300 ATK and DEF.	36607978	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Mystical Sheep #2	EARTH	3	Beast	800	1000	A monstrous sheep with a long tail for hypnotizing enemies.	83454209	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Nemuriko	DARK	3	Spellcaster	800	700	A child-like creature that controls a sleep fiend to beckon enemies into eternal slumber.	90963488	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Neo the Magic Swordsman	LIGHT	4	Spellcaster	1700	1000	A dimensional drifter who not only practices sorcery, but is also a sword and martial arts master.	50930991	03/29/2002	Yugi	Starter Deck
+Monster	Normal	Ogre of the Black Shadow	EARTH	4	Beast-Warrior	1200	1400	An ogre possessed by the powers of the dark. Few can withstand its rapid charge.	45121025	03/29/2002	Kaiba	Starter Deck
+Monster	Normal	One-Eyed Shield Dragon	WIND	3	Dragon	700	1300	This dragon wears a shield not only for its own protection, but also for ramming its enemies.	33064647	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Spell	Normal	Ookazi						Inflict 800 damage to your opponent.	19523799	03/29/2002	Kaiba	Starter Deck
+Monster	Normal	Pale Beast	EARTH	4	Beast	1500	1200	With skin tinged a bluish-white, this strange creature is a fearsome sight to behold.	21263083	03/29/2002	Kaiba	Starter Deck
+Monster	Normal	Petit Angel	LIGHT	3	Fairy	600	900	A quick-moving and tiny fairy that's very difficult to hit.	38142739	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Petit Dragon	WIND	2	Dragon	600	700	A very small dragon known for its vicious attacks.	75356564	03/08/2002	Legend of Blue Eyes White Dragon	Set
 Spell	Normal	Polymerization						Fusion Summon 1 Fusion Monster from your Extra Deck, using monsters from your hand or field as Fusion Material.	24094653	03/08/2002	Legend of Blue Eyes White Dragon	Set
 Spell	Normal	Pot of Greed						Draw 2 cards.	55144522	03/08/2002	Legend of Blue Eyes White Dragon	Set
 Spell	Equip	Power of Kaishin						Equip only to an Aqua monster. It gains 300 ATK/DEF.	77027445	03/08/2002	Legend of Blue Eyes White Dragon	Set
 Spell	Normal	Raigeki						Destroy all monsters your opponent controls.	12580477	03/08/2002	Legend of Blue Eyes White Dragon	Set
 Spell	Equip	Raise Body Heat						A Dinosaur-Type monster equipped with this card increases its ATK and DEF by 300 points.	51267887	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Ray & Temperature	LIGHT	3	Fairy	1000	1000	The sun and the North Wind join hands to deliver a devastating combination of heat and gale-force winds.	85309439	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Flip	Reaper of the Cards	DARK	5	Fiend	1380	1930	FLIP: Select 1 Trap Card on the field and destroy it. If the selected card is Set, pick up and see the card. If it is a Trap Card, it is destroyed. If it is a Spell Card, return it to its original position.	33066139	03/08/2002	Legend of Blue Eyes White Dragon	Set
 Spell	Normal	Red Medicine						Increase your Life Points by 500 points.	38199696	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Red-Eyes Black Dragon	DARK	7	Dragon	2400	2000	A ferocious dragon with a deadly attack.	74677422	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Trap	Normal	Reinforcements						Target 1 face-up monster on the field; it gains 500 ATK until the end of this turn.	17814387	03/29/2002	Yugi	Starter Deck
 Spell	Normal	Remove Trap						Select 1 face-up Trap Card on the field and destroy it.	51482758	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Trap	Normal	Reverse Trap						Until the End Phase, all effects that add or subtract ATK or DEF are reversed. (Additions now subtract, and subtractions now add, instead. Multiplications and divisions, including halving/doubling, are not affected.)	77622396	03/29/2002	Yugi	Starter Deck
+Monster	Normal	Right Arm of the Forbidden One	DARK	1	Spellcaster	200	300	A forbidden right arm sealed by magic. Whosoever breaks this seal will know infinite power.	70903634	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Right Leg of the Forbidden One	DARK	1	Spellcaster	200	300	A forbidden right leg sealed by magic. Whosoever breaks this seal will know infinite power.	08124921	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Rogue Doll	LIGHT	4	Spellcaster	1600	1000	A deadly doll gifted with mystical power, it is particularly powerful when attacking against dark forces.	91939608	03/29/2002	Kaiba	Starter Deck
+Monster	Normal	Root Water	WATER	3	Fish	900	800	An amphibian capable of calling up a massive tidal wave from the dark seas to wipe out enemy monsters.	39004808	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Rude Kaiser	EARTH	5	Beast-Warrior	1800	1600	With an axe in each hand, this monster delivers heavy damage.	26378150	03/29/2002	Kaiba	Starter Deck
+Monster	Normal	Ryu-Kishin	DARK	3	Fiend	1000	500	A very elusive creature that looks like a harmless statue until it attacks.	15303296	03/29/2002	Kaiba	Starter Deck
+Monster	Normal	Ryu-Kishin Powered	DARK	4	Fiend	1600	1200	A gargoyle enhanced by the powers of darkness. Very sharp talons make it a worthy opponent.	24611934	03/29/2002	Kaiba	Starter Deck
+Monster	Normal	Sand Stone	EARTH	5	Rock	1300	1600	Appears from underground and attacks with long, snake-like tentacles.	73051941	03/08/2002	Legend of Blue Eyes White Dragon	Set
 Spell	Equip	Silver Bow and Arrow						A Fairy-Type monster equipped with this card increases its ATK and DEF by 300 points.	01557499	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Silver Fang	EARTH	3	Beast	1200	800	A snow wolf that's beautiful to the eye, but absolutely vicious in battle.	90357090	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Skull Red Bird	WIND	4	Winged Beast	1550	1200	This monster swoops down and attacks with a rain of knives stored in its wings.	10202894	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Skull Servant	DARK	1	Zombie	300	200	A skeletal ghost that isn't strong but can mean trouble in large numbers.	32274490	03/08/2002	Legend of Blue Eyes White Dragon	Set
 Spell	Field	Sogen						All Warrior and Beast-Warrior monsters on the field gain 200 ATK/DEF.	86318356	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Sorcerer of the Doomed	DARK	4	Spellcaster	1450	1200	A slave of the dark arts, this sorcerer is a master of life-extinguishing spells.	49218300	03/29/2002	Yugi	Starter Deck
+Spell	Normal	Soul Exchange						Target 1 monster your opponent controls; this turn, if you Tribute a monster, you must Tribute that monster, as if you controlled it. You cannot conduct your Battle Phase the turn you activate this card.	68005187	03/29/2002	Yugi	Starter Deck
 Spell	Normal	Sparks						Inflict 200 points of damage to your opponent's Life Points.	76103675	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Spike Seadra	WATER	5	Sea Serpent	1600	1300	Using the spikes sprouting from its body, this creature stabs its opponents and floods them with electricity.	85326399	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Spirit of the Harp	LIGHT	4	Fairy	800	2000	A spirit that soothes the soul with the music of its heavenly harmp.	80770678	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Steel Ogre Grotto #1	EARTH	5	Machine	1400	1800	A steel idol worshipped in the Land of Machines.	29172562	03/08/2002	Legend of Blue Eyes White Dragon	Set
 Spell	Normal	Stop Defense						Select 1 Defense Position monster on your opponent's side of the field and change it to Attack Position.	63102017	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Succubus Knight	DARK	5	Warrior	1650	1300	A warrior wizard adept in casting bone-chilling spells.	55291359	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Summoned Skull	DARK	6	Fiend	2500	1200	A fiend with dark powers for confusing the enemy. Among the Fiend-Type monsters, this monster boasts considerable force.	70781052	03/29/2002	Yugi	Starter Deck
+Spell	Equip	Sword of Dark Destruction						A DARK monster equipped with this card increases its ATK by 400 points and decreases its DEF by 200 points.	37120512	03/29/2002	Yugi	Starter Deck
 Spell	Normal	Swords of Revealing Light						After this card's activation, it remains on the field, but destroy it during the End Phase of your opponent's 3rd turn. When this card is activated: If your opponent controls a face-down monster, flip all monsters they control face-up. While this card is face-up on the field, your opponent's monsters cannot declare an attack.	72302403	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Swordstalker	DARK	6	Warrior	2000	1600	A monster formed by the vengeful souls of those who passed away in battle.	50005633	03/29/2002	Kaiba	Starter Deck
+Monster	Normal	Terra the Terrible	DARK	4	Fiend	1200	1300	Known as a swamp dweller, this creature is a minion of the dark forces.	63308047	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	The 13th Grave	DARK	3	Zombie	1200	900	A zombie that appeared from plot #13 - an empty grave.	00032864	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Spell	Normal	The Flute of Summoning Dragon						Special Summon up to 2 Dragon monsters from your hand. "Lord of D." must be on the field to activate and to resolve this effect.	43973174	03/29/2002	Kaiba	Starter Deck
+Monster	Normal	The Furious Sea King	WATER	3	Aqua	800	700	Grand King of the Seven Seas, he's able to summon massive tidal waves to drown the enemy.	18710707	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Spell	Normal	The Inexperienced Spy						Select and see 1 card in your opponent's hand.	81820689	03/29/2002	Kaiba	Starter Deck
+Monster	Flip	The Stern Mystic	LIGHT	4	Spellcaster	1500	1200	FLIP: Reveal all face-down cards on the field (Flip Effects are not activated), then return them to their original positions.	87557188	03/29/2002	Yugi	Starter Deck
+Monster	Effect	The Wicked Worm Beast	EARTH	3	Beast	1400	700	This face-up card on the field is returned to the owner's hand during the End Phase of your turn.	06285791	03/29/2002	Kaiba	Starter Deck
+Trap	Normal	Trap Hole						When your opponent Normal or Flip Summons 1 monster with 1000 or more ATK: Target that monster; destroy that target.	04206964	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Flip	Trap Master	EARTH	3	Warrior	500	1100	FLIP: Select 1 Trap Card on the field and destroy it. If the selected card is Set, pick up and see the card. If it is a Trap Card, it is destroyed. If it is a Spell Card, return it to its original position.	46461247	03/29/2002	Yugi	Starter Deck
+Monster	Normal	Tri-Horned Dragon	DARK	8	Dragon	2850	2350	An unworthy dragon with three sharp horns sprouting from its head.	39111158	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Trial of Nightmare	DARK	4	Fiend	1300	900	This fiend passes judgement on enemies that are locked in coffins.	77827521	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Tripwire Beast	EARTH	4	Thunder	1200	1300	This creature attacks with electromagnetic waves.	45042329	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Turtle Tiger	WATER	4	Aqua	1000	1500	A tiger encased in a protective shell that attacks with razor-sharp fangs.	37313348	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Two-Mouth Darkruler	EARTH	3	Dinosaur	900	700	A dinosaur with two deadly jaws, it stores electricity in its horn and releases high voltage bolts from the mouth on its back.	57305373	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Trap	Normal	Two-Pronged Attack						Select and destroy 2 of your monstera and 1 of your opponent's monsters.	83887306	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Tyhone	WIND	4	Winged Beast	1200	1400	Capable of firing cannonballs from its mouth for long-range attacks, this creature is particularly effective in mountain battles.	72842870	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Trap	Continuous	Ultimate Offering						During your Main Phase or your opponent's Battle Phase: You can pay 500 Life Points; immediately after this effect resolves, Normal Summon/Set 1 monster.	80604091	03/29/2002	Yugi	Starter Deck
 Spell	Field	Umi						All Fish, Sea Serpent, Thunder, and Aqua monsters on the field gain 200 ATK/DEF, also all Machine and Pyro monsters on the field lose 200 ATK/DEF.	22702055	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Unknown Warrior of Fiend	DARK	3	Warrior	1000	500	The speed of this warrior creates an intense vacuum that can slice through a monster's hide.	97360116	03/29/2002	Kaiba	Starter Deck
+Monster	Normal	Uraby	EARTH	4	Dinosaur	1500	800	Fast on its feet, this dinosaur rips enemies to shreds with its sharp claws.	01784619	03/08/2002	Legend of Blue Eyes White Dragon	Set
 Spell	Equip	Vile Germs						A Plant-Type monster equipped with this card increases its ATK and DEF by 300 points.	39774685	03/08/2002	Legend of Blue Eyes White Dragon	Set
 Spell	Equip	Violet Crystal						A Zombie-Type monster equipped with this card increases its ATK and DEF by 300 points.	15052462	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Trap	Normal	Waboku						You take no battle damage from your opponent's monsters this turn. Your monsters cannot be destroyed by battle this turn.	12607053	03/29/2002	Yugi	Starter Deck
+Monster	Effect	Wall of Illusion	DARK	4	Fiend	1000	1850	If this card is attacked by a monster, after damage calculation: Return that monster to the hand.	13945283	03/29/2002	Yugi	Starter Deck
 Spell	Field	Wasteland						All Dinosaur, Zombie, and Rock monsters on the field gain 200 ATK/DEF.	23424603	03/08/2002	Legend of Blue Eyes White Dragon	Set
+Monster	Normal	Winged Dragon, Guardian of the Fortress #1	WIND	4	Dragon	1400	1200	A dragon commonly found guarding mountain fortresses. Its signature attack is a sweeping dive from out of the blue.	87796900	03/29/2002	Yugi	Starter Deck
+Monster	Normal	Witty Phantom	DARK	4	Fiend	1400	1300	Dressed in a night-black tuxedo, this creature presides over the darkness.	36304921	03/08/2002	Legend of Blue Eyes White Dragon	Set
 Spell	Field	Yami						All Fiend and Spellcaster monsters on the field gain 200 ATK/DEF, also all Fairy monsters on the field lose 200 ATK/DEF.	59197169	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Trap	Continuous	Dragon Capture Jar						Change all face-up Dragon-Type monsters on the field to Defense Position, also they cannot change their battle positions.	50045299	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Trap	Normal	Trap Hole						When your opponent Normal or Flip Summons 1 monster with 1000 or more ATK: Target that monster; destroy that target.	04206964	03/08/2002	Legend of Blue Eyes White Dragon	Set
-Trap	Normal	Two-Pronged Attack						Select and destroy 2 of your monstera and 1 of your opponent's monsters.	83887306	03/08/2002	Legend of Blue Eyes White Dragon	Set

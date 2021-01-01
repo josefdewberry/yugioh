@@ -154,7 +154,7 @@ public class Card {
             if (s.equals("WATER")) { return WATER; }
 
             // This shouldn't happen.
-            System.out.println("Bad attribute.");
+            System.out.println("Bad attribute: " + s);
             return null;
         }
     }
@@ -202,12 +202,19 @@ public class Card {
             public String toString() {
                 return("Set");
             }
+        },
+        
+        STARTER {
+            public String toString() {
+                return("Starter Deck");
+            }
         };
 
         // Sets come as strings, so this is to easily match
         // the string to the proper enum.
         public static ReleaseType findMatch(String s) {
             if (s.equals("Set")) { return SET; }
+            if (s.equals("Starter Deck")) { return STARTER; }
 
             // This shouldn't happen.
             System.out.println("Bad release type.");
