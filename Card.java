@@ -14,6 +14,7 @@ public class Card {
      */
     public enum Effect {
         
+        ALL,
         // The normal effect (i.e. no effect), applicable to all cards.
         NORMAL {
             public String toString() {
@@ -80,12 +81,21 @@ public class Card {
             System.out.println("Bad effect: " + s);
             return null;
         }
+
+        public static boolean equals(Effect e1, Effect e2) {
+            if (e1 == ALL || e2 == ALL) {
+                return true;
+            } else {
+                return (e1 == e2);
+            }
+        }
     }
     
     /**
      * Monster cards have a type. There's quite a few of them.
      */
     public enum Type {
+        ALL,
         AQUA,
         BEAST,
         BEASTWARRIOR,
@@ -137,12 +147,21 @@ public class Card {
             System.out.println("Bad type.");
             return null;
         }
+
+        public static boolean equals(Type e1, Type e2) {
+            if (e1 == ALL || e2 == ALL) {
+                return true;
+            } else {
+                return (e1 == e2);
+            }
+        }
     }
     
     /**
      * All monsters have an attribute.
      */
     public enum Attribute {
+        ALL,
         DARK,
         LIGHT,
         EARTH,
@@ -165,6 +184,14 @@ public class Card {
             System.out.println("Bad attribute: " + s);
             return null;
         }
+
+        public static boolean equals(Attribute e1, Attribute e2) {
+            if (e1 == ALL || e2 == ALL) {
+                return true;
+            } else {
+                return (e1 == e2);
+            }
+        }
     }
     
     /**
@@ -173,6 +200,7 @@ public class Card {
      * have a lot more property than spell and trap cards.
      */
     public enum CardType {
+        ALL,
         MONSTER {
             public String toString() {
                 return("Monster");
@@ -197,6 +225,14 @@ public class Card {
             // This shouldn't happen.
             System.out.println("Bad card type.");
             return null;
+        }
+
+        public static boolean equals(CardType e1, CardType e2) {
+            if (e1 == ALL || e2 == ALL) {
+                return true;
+            } else {
+                return (e1 == e2);
+            }
         }
     }
     

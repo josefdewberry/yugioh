@@ -14,7 +14,7 @@ import java.util.Scanner;
  * based upon specifications such as certain effects, attributes, etc.
  */
 public class CardDisplay {
-    
+
     // A list of all the cards available
     public static ArrayList<Card> cards;
 
@@ -26,12 +26,32 @@ public class CardDisplay {
 
         // Prints every single cards name, in case the user
         // is looking for a specific card.
-        String s = cards.get(0).name;
+        String s = "CARDS:";
 
-        for (int i = 1; i < cards.size(); i++) {
+        for (int i = 0; i < cards.size(); i++) {
             s = s.concat("\n" + cards.get(i).name);
         }
 
+        return s;
+    }
+
+    public static String print(CardType cardType, Effect effect, Attribute attribute, Type type) {
+        String s = "CARDS:";
+
+        for (int i = 0; i < cards.size(); i++) {
+            Card testCard = cards.get(i);
+            if (cardType == CardType.MONSTER && testCard.cardType == cardType) {
+                MonsterCard testMCard = (MonsterCard) testCard;
+                if (Effect.equals(effect, testMCard.effect) && Attribute.equals(attribute, testMCard.attribute) &&
+                    Type.equals(type, testMCard.type)) {
+                        s = s.concat("\n" + testMCard.name);
+                    }
+            } else if (cardType == CardType.SPELL || cardType == CardType.TRAP) {
+                if (CardType.equals(cardType, testCard.cardType) && Effect.equals(effect, testCard.effect)) {
+                    s = s.concat("\n" + testCard.name);
+                }
+            }
+        }
         return s;
     }
 
