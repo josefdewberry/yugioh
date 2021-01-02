@@ -9,6 +9,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JSeparator;
 import javax.swing.JTextArea;
 import javax.swing.SwingConstants;
+import java.text.*;
 
 import yugioh.CardDisplay.*;
 
@@ -190,22 +191,28 @@ public class GUI {
         JPanel atkPanel = new JPanel();
         atkPanel.setLayout(new WrapLayout(FlowLayout.LEADING));
         JLabel atkMinLabel = new JLabel("Minimum ATK: ");
-        JFormattedTextField atkMinField = new JFormattedTextField();
+        NumberFormat format = NumberFormat.getIntegerInstance();
+        format.setGroupingUsed(false);
+        JFormattedTextField atkMinField = new JFormattedTextField(format);
         atkMinField.setColumns(4);
+        atkMinField.setValue(0);
         JLabel atkMaxLabel = new JLabel("Maximum ATK: ");
-        JFormattedTextField atkMaxField = new JFormattedTextField();
+        JFormattedTextField atkMaxField = new JFormattedTextField(format);
         atkMaxField.setColumns(4);
+        atkMaxField.setValue(9999);
 
         JPanel buttonPanel9 = new JPanel();
         buttonPanel9.setLayout(new BorderLayout());
         JPanel defPanel = new JPanel();
         defPanel.setLayout(new WrapLayout(FlowLayout.LEADING));
         JLabel defMinLabel = new JLabel("Minimum DEF: ");
-        JFormattedTextField defMinField = new JFormattedTextField();
+        JFormattedTextField defMinField = new JFormattedTextField(format);
         defMinField.setColumns(4);
+        defMinField.setValue(0);
         JLabel defMaxLabel = new JLabel("Maximum DEF: ");
-        JFormattedTextField defMaxField = new JFormattedTextField();
+        JFormattedTextField defMaxField = new JFormattedTextField(format);
         defMaxField.setColumns(4);
+        defMaxField.setValue(9999);
 
 
         frame.add(buttonPanel, BorderLayout.CENTER);
