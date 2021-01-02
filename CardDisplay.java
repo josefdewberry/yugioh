@@ -35,7 +35,8 @@ public class CardDisplay {
         return s;
     }
 
-    public static String print(CardType cardType, Effect effect, Attribute attribute, Type type) {
+    public static String print(CardType cardType, Effect effect, Attribute attribute, Type type,
+                               int minLevel, int maxLevel, int minAtk, int maxAtk, int minDef, int maxDef) {
         String s = "CARDS:";
 
         for (int i = 0; i < cards.size(); i++) {
@@ -44,7 +45,12 @@ public class CardDisplay {
                 MonsterCard testMCard = (MonsterCard) testCard;
                 if (Effect.equals(effect, testMCard.effect) && Attribute.equals(attribute, testMCard.attribute) &&
                     Type.equals(type, testMCard.type)) {
-                        s = s.concat("\n" + testMCard.name);
+                        if (minLevel <= testMCard.level && testMCard.level <= maxLevel) {
+                            if (minAtk <= testMCard.atk && testMCard.atk <= maxAtk &&
+                                minDef <= testMCard.def && testMCard.def <= maxDef) {
+                                s = s.concat("\n" + testMCard.name);
+                            }
+                        }
                     }
             } else if (cardType == CardType.SPELL || cardType == CardType.TRAP) {
                 if (CardType.equals(cardType, testCard.cardType) && Effect.equals(effect, testCard.effect)) {

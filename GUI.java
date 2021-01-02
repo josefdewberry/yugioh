@@ -9,6 +9,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JSeparator;
 import javax.swing.JTextArea;
 import javax.swing.SwingConstants;
+import javax.swing.JButton;
 import java.text.*;
 
 import yugioh.Card.*;
@@ -30,6 +31,12 @@ public class GUI {
     Effect effect = Effect.ALL;
     Attribute attribute = Attribute.ALL;
     Type type = Type.ALL;
+    int minLevel = 1;
+    int maxLevel = 12;
+    int minAtk = 0;
+    int maxAtk = 9999;
+    int minDef = 0;
+    int maxDef = 9999;
 
     public GUI() {
 
@@ -39,6 +46,7 @@ public class GUI {
         JTextArea textArea = new JTextArea(CardDisplay.allCardNames());
         JScrollPane scrollPane = new JScrollPane(textArea);
         textArea.setEditable(false);
+        textArea.setColumns(27);
 
         JPanel buttonPanel = new JPanel();
         buttonPanel.setLayout(new BorderLayout());
@@ -220,6 +228,7 @@ public class GUI {
         JFormattedTextField atkMaxField = new JFormattedTextField(format);
         atkMaxField.setColumns(4);
         atkMaxField.setValue(9999);
+        JButton atkButton = new JButton("Update");
 
         JPanel buttonPanel9 = new JPanel();
         buttonPanel9.setLayout(new BorderLayout());
@@ -234,6 +243,7 @@ public class GUI {
         JFormattedTextField defMaxField = new JFormattedTextField(format);
         defMaxField.setColumns(4);
         defMaxField.setValue(9999);
+        JButton defButton = new JButton("Update");
 
 
         cardTypeMonster.addActionListener(new ActionListener() {
@@ -248,7 +258,7 @@ public class GUI {
                 defPanel.setVisible(true);
 
                 cardType = CardType.MONSTER;
-                textArea.setText(CardDisplay.print(cardType, effect, attribute, type));
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
             }
         });
 
@@ -264,7 +274,7 @@ public class GUI {
                 defPanel.setVisible(false);
 
                 cardType = CardType.SPELL;
-                textArea.setText(CardDisplay.print(cardType, effect, attribute, type));
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
             }
         });
 
@@ -280,264 +290,296 @@ public class GUI {
                 defPanel.setVisible(false);
 
                 cardType = CardType.TRAP;
-                textArea.setText(CardDisplay.print(cardType, effect, attribute, type));
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
             }
         });
 
         monsterEffectAll.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 effect = Effect.ALL;
-                textArea.setText(CardDisplay.print(cardType, effect, attribute, type));
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
             }
         });
         monsterEffectNormal.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 effect = Effect.NORMAL;
-                textArea.setText(CardDisplay.print(cardType, effect, attribute, type));
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
             }
         });
         monsterEffectEffect.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 effect = Effect.EFFECT;
-                textArea.setText(CardDisplay.print(cardType, effect, attribute, type));
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
             }
         });
         monsterEffectFlip.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 effect = Effect.FLIP;
-                textArea.setText(CardDisplay.print(cardType, effect, attribute, type));
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
             }
         });
         monsterEffectFusion.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 effect = Effect.FUSION;
-                textArea.setText(CardDisplay.print(cardType, effect, attribute, type));
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
             }
         });
 
         spellEffectAll.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 effect = Effect.ALL;
-                textArea.setText(CardDisplay.print(cardType, effect, attribute, type));
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
             }
         });
         spellEffectNormal.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 effect = Effect.NORMAL;
-                textArea.setText(CardDisplay.print(cardType, effect, attribute, type));
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
             }
         });
         spellEffectContinuous.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 effect = Effect.CONTINUOUS;
-                textArea.setText(CardDisplay.print(cardType, effect, attribute, type));
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
             }
         });
         spellEffectEquip.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 effect = Effect.EQUIP;
-                textArea.setText(CardDisplay.print(cardType, effect, attribute, type));
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
             }
         });
         spellEffectField.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 effect = Effect.FIELD;
-                textArea.setText(CardDisplay.print(cardType, effect, attribute, type));
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
             }
         });
 
         trapEffectAll.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 effect = Effect.ALL;
-                textArea.setText(CardDisplay.print(cardType, effect, attribute, type));
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
             }
         });
         trapEffectNormal.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 effect = Effect.NORMAL;
-                textArea.setText(CardDisplay.print(cardType, effect, attribute, type));
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
             }
         });
         trapEffectContinuous.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 effect = Effect.CONTINUOUS;
-                textArea.setText(CardDisplay.print(cardType, effect, attribute, type));
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
             }
         });
         trapEffectCounter.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 effect = Effect.COUNTER;
-                textArea.setText(CardDisplay.print(cardType, effect, attribute, type));
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
             }
         });
 
         attributeAll.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 attribute = Attribute.ALL;
-                textArea.setText(CardDisplay.print(cardType, effect, attribute, type));
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
             }
         });
         attributeDark.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 attribute = Attribute.DARK;
-                textArea.setText(CardDisplay.print(cardType, effect, attribute, type));
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
             }
         });
         attributeLight.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 attribute = Attribute.LIGHT;
-                textArea.setText(CardDisplay.print(cardType, effect, attribute, type));
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
             }
         });
         attributeEarth.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 attribute = Attribute.EARTH;
-                textArea.setText(CardDisplay.print(cardType, effect, attribute, type));
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
             }
         });
         attributeFire.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 attribute = Attribute.FIRE;
-                textArea.setText(CardDisplay.print(cardType, effect, attribute, type));
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
             }
         });
         attributeWater.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 attribute = Attribute.WATER;
-                textArea.setText(CardDisplay.print(cardType, effect, attribute, type));
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
             }
         });
         attributeWind.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 attribute = Attribute.WIND;
-                textArea.setText(CardDisplay.print(cardType, effect, attribute, type));
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
             }
         });
 
         typeAll.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 type = Type.ALL;
-                textArea.setText(CardDisplay.print(cardType, effect, attribute, type));
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
             }
         });
         typeAqua.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 type = Type.AQUA;
-                textArea.setText(CardDisplay.print(cardType, effect, attribute, type));
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
             }
         });
         typeBeast.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 type = Type.BEAST;
-                textArea.setText(CardDisplay.print(cardType, effect, attribute, type));
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
             }
         });
         typeBeastwarrior.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 type = Type.BEASTWARRIOR;
-                textArea.setText(CardDisplay.print(cardType, effect, attribute, type));
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
             }
         });
         typeDinosaur.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 type = Type.DINOSAUR;
-                textArea.setText(CardDisplay.print(cardType, effect, attribute, type));
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
             }
         });
         typeDragon.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 type = Type.DRAGON;
-                textArea.setText(CardDisplay.print(cardType, effect, attribute, type));
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
             }
         });
         typeFairy.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 type = Type.FAIRY;
-                textArea.setText(CardDisplay.print(cardType, effect, attribute, type));
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
             }
         });
         typeFiend.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 type = Type.FIEND;
-                textArea.setText(CardDisplay.print(cardType, effect, attribute, type));
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
             }
         });
         typeFish.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 type = Type.FISH;
-                textArea.setText(CardDisplay.print(cardType, effect, attribute, type));
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
             }
         });
         typeInsect.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 type = Type.INSECT;
-                textArea.setText(CardDisplay.print(cardType, effect, attribute, type));
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
             }
         });
         typeMachine.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 type = Type.MACHINE;
-                textArea.setText(CardDisplay.print(cardType, effect, attribute, type));
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
             }
         });
         typePlant.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 type = Type.PLANT;
-                textArea.setText(CardDisplay.print(cardType, effect, attribute, type));
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
             }
         });
         typePyro.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 type = Type.PYRO;
-                textArea.setText(CardDisplay.print(cardType, effect, attribute, type));
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
             }
         });
         typeReptile.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 type = Type.REPTILE;
-                textArea.setText(CardDisplay.print(cardType, effect, attribute, type));
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
             }
         });
         typeRock.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 type = Type.ROCK;
-                textArea.setText(CardDisplay.print(cardType, effect, attribute, type));
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
             }
         });
         typeSeaserpent.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 type = Type.SEASERPENT;
-                textArea.setText(CardDisplay.print(cardType, effect, attribute, type));
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
             }
         });
         typeSpellcaster.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 type = Type.SPELLCASTER;
-                textArea.setText(CardDisplay.print(cardType, effect, attribute, type));
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
             }
         });
         typeThunder.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 type = Type.THUNDER;
-                textArea.setText(CardDisplay.print(cardType, effect, attribute, type));
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
             }
         });
         typeWarrior.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 type = Type.WARRIOR;
-                textArea.setText(CardDisplay.print(cardType, effect, attribute, type));
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
             }
         });
         typeWingedbeast.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 type = Type.WINGEDBEAST;
-                textArea.setText(CardDisplay.print(cardType, effect, attribute, type));
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
             }
         });
         typeZombie.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 type = Type.ZOMBIE;
-                textArea.setText(CardDisplay.print(cardType, effect, attribute, type));
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
+            }
+        });
+
+        levelMinBox.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                minLevel = Integer.parseInt((String) levelMinBox.getSelectedItem());
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
+            }
+        });
+        levelMaxBox.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                maxLevel = Integer.parseInt((String) levelMaxBox.getSelectedItem());
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
+            }
+        });
+
+        atkButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                minAtk = Integer.parseInt(atkMinField.getText());
+                maxAtk = Integer.parseInt(atkMaxField.getText());
+                minDef = Integer.parseInt(defMinField.getText());
+                maxDef = Integer.parseInt(defMaxField.getText());
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
+            }
+        });
+        defButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                minAtk = Integer.parseInt(atkMinField.getText());
+                maxAtk = Integer.parseInt(atkMaxField.getText());
+                minDef = Integer.parseInt(defMinField.getText());
+                maxDef = Integer.parseInt(defMaxField.getText());
+                textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
             }
         });
 
@@ -616,12 +658,14 @@ public class GUI {
         atkPanel.add(atkMinField);
         atkPanel.add(atkMaxLabel);
         atkPanel.add(atkMaxField);
+        atkPanel.add(atkButton);
         buttonPanel8.add(atkPanel, BorderLayout.NORTH);
         buttonPanel8.add(buttonPanel9, BorderLayout.CENTER);
         defPanel.add(defMinLabel);
         defPanel.add(defMinField);
         defPanel.add(defMaxLabel);
         defPanel.add(defMaxField);
+        defPanel.add(defButton);
         buttonPanel9.add(defPanel, BorderLayout.NORTH);
 
         frame.add(scrollPane, BorderLayout.EAST);
