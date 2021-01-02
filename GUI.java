@@ -20,9 +20,11 @@ import java.awt.BorderLayout;
 import java.awt.FlowLayout;
 import yugioh.WrapLayout.*;
 import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.*;
 
 public class GUI {
-    
+
     public GUI() {
 
         JFrame frame = new JFrame();
@@ -39,15 +41,14 @@ public class GUI {
         cardTypePanel.setLayout(new WrapLayout(FlowLayout.LEADING));
         JLabel cardTypeLabel = new JLabel("Card Type: ");
 
-        JRadioButton cardTypeAll = new JRadioButton("All");
         JRadioButton cardTypeMonster = new JRadioButton("Monster");
         JRadioButton cardTypeSpell = new JRadioButton("Spell");
         JRadioButton cardTypeTrap = new JRadioButton("Trap");
         ButtonGroup cardTypeGroup = new ButtonGroup();
-        cardTypeGroup.add(cardTypeAll);
         cardTypeGroup.add(cardTypeMonster);
         cardTypeGroup.add(cardTypeSpell);
         cardTypeGroup.add(cardTypeTrap);
+        cardTypeGroup.setSelected(cardTypeMonster.getModel(), true);
 
         JPanel buttonPanel2 = new JPanel();
         buttonPanel2.setLayout(new BorderLayout());
@@ -71,6 +72,7 @@ public class GUI {
         buttonPanel3.setLayout(new BorderLayout());
         JPanel spellEffectPanel = new JPanel();
         spellEffectPanel.setLayout(new WrapLayout(FlowLayout.LEADING));
+        spellEffectPanel.setVisible(false);
         JLabel spellEffectLabel = new JLabel("Spell Effect: ");
 
         JRadioButton spellEffectAll = new JRadioButton("All");
@@ -89,6 +91,7 @@ public class GUI {
         buttonPanel4.setLayout(new BorderLayout());
         JPanel trapEffectPanel = new JPanel();
         trapEffectPanel.setLayout(new WrapLayout(FlowLayout.LEADING));
+        trapEffectPanel.setVisible(false);
         JLabel trapEffectLabel = new JLabel("Trap Effect: ");
 
         JRadioButton trapEffectAll = new JRadioButton("All");
@@ -215,9 +218,47 @@ public class GUI {
         defMaxField.setValue(9999);
 
 
+        cardTypeMonster.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                monsterEffectPanel.setVisible(true);
+                spellEffectPanel.setVisible(false);
+                trapEffectPanel.setVisible(false);
+                attributePanel.setVisible(true);
+                typePanel.setVisible(true);
+                levelPanel.setVisible(true);
+                atkPanel.setVisible(true);
+                defPanel.setVisible(true);
+            }
+        });
+
+        cardTypeSpell.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                monsterEffectPanel.setVisible(false);
+                spellEffectPanel.setVisible(true);
+                trapEffectPanel.setVisible(false);
+                attributePanel.setVisible(false);
+                typePanel.setVisible(false);
+                levelPanel.setVisible(false);
+                atkPanel.setVisible(false);
+                defPanel.setVisible(false);
+            }
+        });
+
+        cardTypeTrap.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                monsterEffectPanel.setVisible(false);
+                spellEffectPanel.setVisible(false);
+                trapEffectPanel.setVisible(true);
+                attributePanel.setVisible(false);
+                typePanel.setVisible(false);
+                levelPanel.setVisible(false);
+                atkPanel.setVisible(false);
+                defPanel.setVisible(false);
+            }
+        });
+
         frame.add(buttonPanel, BorderLayout.CENTER);
         cardTypePanel.add(cardTypeLabel);
-        cardTypePanel.add(cardTypeAll);
         cardTypePanel.add(cardTypeMonster);
         cardTypePanel.add(cardTypeSpell);
         cardTypePanel.add(cardTypeTrap);
@@ -310,5 +351,7 @@ public class GUI {
 
     public static void main(String[] args) {
         new GUI();
+
+
     }
 }
