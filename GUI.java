@@ -2,6 +2,8 @@ package yugioh;
 
 import javax.swing.JPanel;
 import javax.swing.ButtonGroup;
+import javax.swing.JComboBox;
+import javax.swing.JFormattedTextField;
 import javax.swing.JRadioButton;
 import javax.swing.JScrollPane;
 import javax.swing.JSeparator;
@@ -171,6 +173,40 @@ public class GUI {
         typeGroup.add(typeWingedbeast);
         typeGroup.add(typeZombie);
 
+        JPanel buttonPanel7 = new JPanel();
+        buttonPanel7.setLayout(new BorderLayout());
+        JPanel levelPanel = new JPanel();
+        levelPanel.setLayout(new WrapLayout(FlowLayout.LEADING));
+        JLabel levelMinLabel = new JLabel("Minimum Level: ");
+        String[] levels = {"1", "2", "3", "4", "5", "6",
+                           "7", "8", "9", "10", "11", "12"};
+        JComboBox levelMinBox = new JComboBox(levels);
+        JLabel levelMaxLabel = new JLabel("Maximum Level: ");
+        JComboBox levelMaxBox = new JComboBox(levels);
+        levelMaxBox.setSelectedIndex(11);
+
+        JPanel buttonPanel8 = new JPanel();
+        buttonPanel8.setLayout(new BorderLayout());
+        JPanel atkPanel = new JPanel();
+        atkPanel.setLayout(new WrapLayout(FlowLayout.LEADING));
+        JLabel atkMinLabel = new JLabel("Minimum ATK: ");
+        JFormattedTextField atkMinField = new JFormattedTextField();
+        atkMinField.setColumns(4);
+        JLabel atkMaxLabel = new JLabel("Maximum ATK: ");
+        JFormattedTextField atkMaxField = new JFormattedTextField();
+        atkMaxField.setColumns(4);
+
+        JPanel buttonPanel9 = new JPanel();
+        buttonPanel9.setLayout(new BorderLayout());
+        JPanel defPanel = new JPanel();
+        defPanel.setLayout(new WrapLayout(FlowLayout.LEADING));
+        JLabel defMinLabel = new JLabel("Minimum DEF: ");
+        JFormattedTextField defMinField = new JFormattedTextField();
+        defMinField.setColumns(4);
+        JLabel defMaxLabel = new JLabel("Maximum DEF: ");
+        JFormattedTextField defMaxField = new JFormattedTextField();
+        defMaxField.setColumns(4);
+
 
         frame.add(buttonPanel, BorderLayout.CENTER);
         cardTypePanel.add(cardTypeLabel);
@@ -236,6 +272,24 @@ public class GUI {
         typePanel.add(typeWingedbeast);
         typePanel.add(typeZombie);
         buttonPanel6.add(typePanel, BorderLayout.NORTH);
+        buttonPanel6.add(buttonPanel7, BorderLayout.CENTER);
+        levelPanel.add(levelMinLabel);
+        levelPanel.add(levelMinBox);
+        levelPanel.add(levelMaxLabel);
+        levelPanel.add(levelMaxBox);
+        buttonPanel7.add(levelPanel, BorderLayout.NORTH);
+        buttonPanel7.add(buttonPanel8, BorderLayout.CENTER);
+        atkPanel.add(atkMinLabel);
+        atkPanel.add(atkMinField);
+        atkPanel.add(atkMaxLabel);
+        atkPanel.add(atkMaxField);
+        buttonPanel8.add(atkPanel, BorderLayout.NORTH);
+        buttonPanel8.add(buttonPanel9, BorderLayout.CENTER);
+        defPanel.add(defMinLabel);
+        defPanel.add(defMinField);
+        defPanel.add(defMaxLabel);
+        defPanel.add(defMaxField);
+        buttonPanel9.add(defPanel, BorderLayout.NORTH);
 
         frame.add(scrollPane, BorderLayout.EAST);
         
