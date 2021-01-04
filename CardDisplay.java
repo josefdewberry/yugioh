@@ -35,29 +35,52 @@ public class CardDisplay {
         return s;
     }
 
+    /**
+     * Method used for GUI to print out cards based on declared properties.
+     * @param cardType
+     * @param effect
+     * @param attribute
+     * @param type
+     * @param minLevel
+     * @param maxLevel
+     * @param minAtk
+     * @param maxAtk
+     * @param minDef
+     * @param maxDef
+     * @return
+     */
     public static String print(CardType cardType, Effect effect, Attribute attribute, Type type,
                                int minLevel, int maxLevel, int minAtk, int maxAtk, int minDef, int maxDef) {
         String s = "CARDS:";
 
+        // Search through all the cards
         for (int i = 0; i < cards.size(); i++) {
+            // Easier to get the card we're checking's properties if we just pull it out
             Card testCard = cards.get(i);
+            // First check if it's a monster because those have extra properties.
             if (cardType == CardType.MONSTER && testCard.cardType == cardType) {
+                // If it's a monster we can typecast it to monster...
                 MonsterCard testMCard = (MonsterCard) testCard;
+                // And then check all of its enum properties
                 if (Effect.equals(effect, testMCard.effect) && Attribute.equals(attribute, testMCard.attribute) &&
                     Type.equals(type, testMCard.type)) {
+                        // Then check all its numerical properties
                         if (minLevel <= testMCard.level && testMCard.level <= maxLevel) {
                             if (minAtk <= testMCard.atk && testMCard.atk <= maxAtk &&
                                 minDef <= testMCard.def && testMCard.def <= maxDef) {
-                                s = s.concat("\n" + testMCard.name);
+                                    // If we've made it this far then it's definitely correct
+                                    s = s.concat("\n" + testMCard.name);
                             }
                         }
                     }
+            // If the card we need is a spell or trap then we only have to match the card type and effect.
             } else if (cardType == CardType.SPELL || cardType == CardType.TRAP) {
                 if (CardType.equals(cardType, testCard.cardType) && Effect.equals(effect, testCard.effect)) {
                     s = s.concat("\n" + testCard.name);
                 }
             }
         }
+        // Return our string which is just a list of card names.
         return s;
     }
 

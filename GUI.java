@@ -25,33 +25,50 @@ import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.*;
 
+/**
+ * A basic GUI for my Yu-Gi-Oh! card sorter/displayer.
+ */
 public class GUI {
 
+    // Initialize all the card properties. These are used later to pass
+    // to CardDisplay to sort the cards.
     CardType cardType = CardType.ALL;
     Effect effect = Effect.ALL;
     Attribute attribute = Attribute.ALL;
     Type type = Type.ALL;
+    // The minimum level a monster can have is 1 and the maximum is 12. This ensures
+    // all monsters are shown.
     int minLevel = 1;
     int maxLevel = 12;
+    // The same with the level goes for atk and def.
     int minAtk = 0;
     int maxAtk = 9999;
     int minDef = 0;
     int maxDef = 9999;
 
+    /**
+     * The GUI constructor.
+     */
     public GUI() {
 
+        // Make the JFrame.
         JFrame frame = new JFrame();
         frame.setLayout(new BorderLayout());
 
+        // This is where all the cards are shown on the right of the GUI.
+        // The list is long so we need a scroll bar too.
         JTextArea textArea = new JTextArea(CardDisplay.allCardNames());
         JScrollPane scrollPane = new JScrollPane(textArea);
         textArea.setEditable(false);
         textArea.setColumns(27);
 
+        // This panel hosts ALL the buttons and fields to sort cards by.
         JPanel buttonPanel = new JPanel();
         buttonPanel.setLayout(new BorderLayout());
 
+        // Panel for card type.
         JPanel cardTypePanel = new JPanel();
+        // Use leading so it looks left aligned.
         cardTypePanel.setLayout(new WrapLayout(FlowLayout.LEADING));
         JLabel cardTypeLabel = new JLabel("Card Type: ");
 
@@ -62,8 +79,9 @@ public class GUI {
         cardTypeGroup.add(cardTypeMonster);
         cardTypeGroup.add(cardTypeSpell);
         cardTypeGroup.add(cardTypeTrap);
-        cardTypeGroup.setSelected(cardTypeMonster.getModel(), true);
 
+        // This only appears if monster is selected, but shows the types
+        // of monster effects.
         JPanel buttonPanel2 = new JPanel();
         buttonPanel2.setLayout(new BorderLayout());
         JPanel monsterEffectPanel = new JPanel();
@@ -84,6 +102,7 @@ public class GUI {
         monsterEffectGroup.add(monsterEffectFusion);
         monsterEffectGroup.setSelected(monsterEffectAll.getModel(), true);
 
+        // This panel only shows if spell is selected.
         JPanel buttonPanel3 = new JPanel();
         buttonPanel3.setLayout(new BorderLayout());
         JPanel spellEffectPanel = new JPanel();
@@ -104,6 +123,7 @@ public class GUI {
         spellEffectGroup.add(spellEffectField);
         spellEffectGroup.setSelected(spellEffectAll.getModel(), true);
 
+        // This panel only shows if trap is selected.
         JPanel buttonPanel4 = new JPanel();
         buttonPanel4.setLayout(new BorderLayout());
         JPanel trapEffectPanel = new JPanel();
@@ -122,6 +142,7 @@ public class GUI {
         trapEffectGroup.add(trapEffectCounter);
         trapEffectGroup.setSelected(trapEffectAll.getModel(), true);
 
+        // All the following panels only show if monster is selected.
         JPanel buttonPanel5 = new JPanel();
         buttonPanel5.setLayout(new BorderLayout());
         JPanel attributePanel = new JPanel();
@@ -153,6 +174,9 @@ public class GUI {
         typePanel.setVisible(false);
         JLabel typeLabel = new JLabel("Monster Type: ");
 
+        // I'm very aware that there is probably an easier way to do this
+        // but I didn't really care at the time. I'll optimize this whole GUI
+        // class later.
         JRadioButton typeAll = new JRadioButton("All");
         JRadioButton typeAqua = new JRadioButton("Aqua");
         JRadioButton typeBeast = new JRadioButton("Beast");
@@ -246,6 +270,8 @@ public class GUI {
         JButton defButton = new JButton("Update");
 
 
+        // This ensures that only monster properties are visible
+        // when monster is selected.
         cardTypeMonster.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 monsterEffectPanel.setVisible(true);
@@ -258,6 +284,25 @@ public class GUI {
                 defPanel.setVisible(true);
 
                 cardType = CardType.MONSTER;
+                effect = Effect.ALL;
+                attribute = Attribute.ALL;
+                type = Type.ALL;
+                minLevel = 1;
+                maxLevel = 12;
+                minAtk = 0;
+                maxAtk = 9999;
+                minDef = 0;
+                maxDef = 9999;
+
+                monsterEffectGroup.setSelected(monsterEffectAll.getModel(), true);
+                attributeGroup.setSelected(attributeAll.getModel(), true);
+                typeGroup.setSelected(typeAll.getModel(), true);
+                levelMinBox.setSelectedIndex(0);
+                levelMaxBox.setSelectedIndex(11);
+                atkMinField.setValue(0);
+                atkMaxField.setValue(9999);
+                defMinField.setValue(0);
+                defMaxField.setValue(9999);
                 textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
             }
         });
@@ -274,6 +319,8 @@ public class GUI {
                 defPanel.setVisible(false);
 
                 cardType = CardType.SPELL;
+                effect = Effect.ALL;
+                spellEffectGroup.setSelected(spellEffectAll.getModel(), true);
                 textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
             }
         });
@@ -290,10 +337,14 @@ public class GUI {
                 defPanel.setVisible(false);
 
                 cardType = CardType.TRAP;
+                effect = Effect.ALL;
+                trapEffectGroup.setSelected(trapEffectAll.getModel(), true);
                 textArea.setText(CardDisplay.print(cardType, effect, attribute, type, minLevel, maxLevel, minAtk, maxAtk, minDef, maxDef));
             }
         });
 
+        // Yes I'm once again aware that there's a better way to do ALL of those buttons lol.
+        // I'll fix it later.
         monsterEffectAll.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 effect = Effect.ALL;
@@ -583,6 +634,9 @@ public class GUI {
             }
         });
 
+        // I'm building panels inside of panels using an inception
+        // of borderLayout panels. It's kind of a mess to do imo
+        // but it looks exactly how I want it to.
         frame.add(buttonPanel, BorderLayout.CENTER);
         cardTypePanel.add(cardTypeLabel);
         cardTypePanel.add(cardTypeMonster);
@@ -678,6 +732,10 @@ public class GUI {
         frame.setVisible(true);
     }
 
+    /**
+     * Just makes the GUI.
+     * @param args
+     */
     public static void main(String[] args) {
         new GUI();
 
